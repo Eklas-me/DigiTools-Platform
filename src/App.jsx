@@ -55,17 +55,23 @@ function App() {
 
       <Stats />
 
-      <MainSection 
-        products={products} 
-        cart={cart}
-        handleAddToCart={handleAddToCart} 
-        handleRemoveFromCart={handleRemoveFromCart}
-        handleCheckout={handleCheckout}
-      />
+      <div id="products">
+        <MainSection 
+          products={products} 
+          cart={cart}
+          handleAddToCart={handleAddToCart} 
+          handleRemoveFromCart={handleRemoveFromCart}
+          handleCheckout={handleCheckout}
+        />
+      </div>
 
-      <Steps />
+      <div id="features">
+        <Steps />
+      </div>
 
-      <Pricing />
+      <div id="pricing">
+        <Pricing />
+      </div>
 
       <Footer />
 

@@ -10,11 +10,11 @@ const Navbar = ({ cartCount = 0 }) => {
         </div>
 
         <ul className="hidden lg:flex gap-8 text-sm font-semibold text-slate-700">
-          <li className="hover:text-[#8247FF] cursor-pointer transition-colors">Products</li>
-          <li className="hover:text-[#8247FF] cursor-pointer transition-colors">Features</li>
-          <li className="hover:text-[#8247FF] cursor-pointer transition-colors">Pricing</li>
-          <li className="hover:text-[#8247FF] cursor-pointer transition-colors">Testimonials</li>
-          <li className="hover:text-[#8247FF] cursor-pointer transition-colors">FAQ</li>
+          <li className="hover:text-[#8247FF] transition-colors"><a href="#products">Products</a></li>
+          <li className="hover:text-[#8247FF] transition-colors"><a href="#features">Features</a></li>
+          <li className="hover:text-[#8247FF] transition-colors"><a href="#pricing">Pricing</a></li>
+          <li className="hover:text-[#8247FF] transition-colors"><a href="#features">Testimonials</a></li>
+          <li className="hover:text-[#8247FF] transition-colors"><a href="#pricing">FAQ</a></li>
         </ul>
 
         <div className="flex items-center gap-6">
