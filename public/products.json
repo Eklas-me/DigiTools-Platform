@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Creative Design ToolKit",
+    "description": "Premium UI design kit with 500+ components, responsive layouts, and customizable templates for mobile and web apps.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "500+ UI Components",
+      "Figma Auto Layout",
+      "Lifetime Updates",
+      "Export to HTML/CSS"
+    ],
+    "icon": "assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler Pro",
+    "description": "Automate your social media posts across all platforms. Includes advanced analytics and optimal posting time suggestions.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited Posts",
+      "AI Post Generator",
+      "Team Collaboration",
+      "Analytics Dashboard"
+    ],
+    "icon": "assets/products/social-media.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Template",
+    "description": "A fully responsive, highly customizable personal portfolio template. Perfect for developers and designers.",
+    "price": 29.00,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Dark/Light Mode",
+      "SEO Optimized",
+      "Contact Form Integration",
+      "Next.js & Tailwind"
+    ],
+    "icon": "assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Operations Management OS",
+    "description": "Complete Notion template for managing projects, teams, finances, and client relationships all in one place.",
+    "price": 99.00,
+    "period": "one-time",
+    "tag": "premium",
+    "tagType": "popular",
+    "features": [
+      "Project Tracker",
+      "Financial Dashboard",
+      "CRM System",
+      "Task Dependencies"
+    ],
+    "icon": "assets/products/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "UX/UI Writing Assistant",
+    "description": "AI-powered tool that suggests engaging microcopy, tooltips, and error messages for your applications.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI Copy Generation",
+      "A/B Testing Simulator",
+      "Brand Voice Customization",
+      "Export to Figma"
+    ],
+    "icon": "assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 6,
+    "name": "E-Commerce Cart Plugin",
+    "description": "A plug-and-play shopping cart component for React apps. Built with Redux and fully customizable.",
+    "price": 39.00,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Stripe Integration",
+      "React/Redux Ready",
+      "TypeScript Support",
+      "Inventory Management"
+    ],
+    "icon": "assets/products/shopping-cart.png"
+  }
+]
