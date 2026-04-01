@@ -4,16 +4,26 @@ const Footer = () => {
   return (
     <footer>
       {/* Top CTA Banner */}
-      <div className="bg-[#8247FF] py-20 px-6 text-center">
-        <h2 className="text-4xl font-extrabold text-white mb-8">Ready to supercharge your workflow?</h2>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button className="px-10 py-4 bg-white text-[#8247FF] font-bold rounded-full hover:bg-gray-100 transition shadow-lg shadow-black/10">
+      <div className="bg-gradient-to-r from-[#6C35F9] to-[#A63EF8] py-28 px-6 text-center flex flex-col items-center justify-center">
+        <h2 className="text-[2.75rem] font-bold text-white mb-4">Ready To Transform Your Workflow?</h2>
+        
+        <p className="text-white/90 text-lg leading-relaxed mb-10 max-w-2xl">
+          Join thousands of professionals who are already using Digitools to work smarter.<br/>
+          Start your free trial today.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+          <button className="px-8 py-3.5 bg-white text-[#8247FF] font-semibold text-[15px] rounded-full hover:bg-gray-50 transition shadow-sm w-full sm:w-auto">
             Explore Products
           </button>
-          <button className="px-10 py-4 bg-transparent border-[2.5px] border-white text-white font-bold rounded-full hover:bg-white/10 transition">
+          <button className="px-8 py-3.5 bg-transparent border border-white text-white font-semibold text-[15px] rounded-full hover:bg-white/10 transition w-full sm:w-auto">
             View Pricing
           </button>
         </div>
+
+        <p className="text-white/70 text-sm font-medium tracking-wide">
+          14-day free trial &bull; No credit card required &bull; Cancel anytime
+        </p>
       </div>
 
       {/* Main Footer Content */}
