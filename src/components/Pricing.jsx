@@ -1,82 +1,115 @@
 import React from 'react';
 
 const Pricing = () => {
-  const features = ["500+ UI Components", "Lifetime Updates", "Community Support", "Commercial License", "1-on-1 Expert Help"];
-
   return (
-    <div className="py-24 bg-[#F8F9FB]">
-      <div className="text-center max-w-2xl mx-auto px-4 mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
-        <p className="text-gray-500 text-base">
-          Choose the plan that best fits your workflow. No hidden fees or surprises.
+    <div className="py-24 bg-white font-sans">
+      
+      {/* Header section */}
+      <div className="text-center max-w-2xl mx-auto px-4 mb-20">
+        <h2 className="text-[2.5rem] font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
+        <p className="text-[#9CA3AF] text-[15px]">
+          Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      {/* Pricing Cards Container */}
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch pt-6">
         
         {/* Starter Plan */}
-        <div className="bg-white border text-left border-gray-100 shadow-sm rounded-[2rem] p-10">
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-          <p className="text-gray-500 text-sm mb-8">Perfect for individuals starting out.</p>
-          <div className="mb-10 flex items-baseline gap-1">
-            <span className="text-[3rem] font-extrabold text-gray-900 leading-none">$19</span>
-            <span className="text-gray-400 font-medium">/Month</span>
+        <div className="bg-white border border-gray-100 shadow-[0_4px_24px_rgba(0,0,0,0.02)] rounded-3xl p-10 flex flex-col text-left">
+          
+          <h3 className="text-[1.3rem] font-bold text-gray-900 mb-1">Starter</h3>
+          <p className="text-[#9CA3AF] text-[13px] mb-6">Perfect for getting started</p>
+          
+          <div className="mb-6 flex items-baseline gap-1">
+            <span className="text-[3.2rem] font-bold text-gray-900 leading-none">$0</span>
+            <span className="text-[#9CA3AF] font-medium text-sm">/Month</span>
           </div>
-          <ul className="flex flex-col gap-4 mb-10">
-            {features.slice(0, 3).map((f, i) => (
-              <li key={i} className="flex items-center gap-3 text-gray-600 font-medium text-[15px]">
-                <svg className="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+          
+          <ul className="flex flex-col gap-3.5 mb-10 flex-grow">
+            {[
+              "Access to 10 free tools",
+              "Basic templates",
+              "Community support",
+              "1 project per month"
+            ].map((f, i) => (
+              <li key={i} className="flex items-center gap-3 text-gray-500 text-[14px]">
+                <svg className="w-[18px] h-[18px] text-[#22C55E] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 {f}
               </li>
             ))}
           </ul>
-          <button className="w-full py-4 mt-auto bg-gray-50 text-gray-900 hover:bg-[#8247FF] hover:text-white font-bold rounded-full transition-all duration-300">
-            Get Starter
+          
+          <button className="w-full py-4 bg-[#8247FF] hover:bg-purple-700 text-white font-bold text-[14px] rounded-full transition-colors mt-auto">
+            Get Started Free
           </button>
         </div>
 
-        {/* Pro Plan */}
-        <div className="bg-[#8247FF] shadow-[0_10px_40px_-10px_rgba(130,71,255,0.5)] rounded-[2.5rem] p-12 transform md:-translate-y-4 relative">
-          <span className="absolute top-8 right-8 bg-[#FFF7ED] text-[#EA580C] px-4 py-1.5 rounded-full text-[11px] font-black uppercase tracking-widest shadow-sm">
+        {/* Pro Plan (Highlighted) */}
+        <div className="bg-[#8247FF] shadow-[0_10px_40px_-5px_rgba(130,71,255,0.4)] rounded-3xl p-10 transform md:scale-105 relative flex flex-col text-left z-10 border border-[#8247FF]">
+          
+          <span className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#FEF3C7] text-[#D97706] px-5 py-1.5 rounded-full text-[12px] font-bold tracking-wide whitespace-nowrap shadow-sm">
             Most Popular
           </span>
-          <h3 className="text-3xl font-bold text-white mb-2">Professional</h3>
-          <p className="text-white/80 text-sm mb-8">For serious creators and teams.</p>
-          <div className="mb-10 flex items-baseline gap-1">
-            <span className="text-[3.5rem] font-extrabold text-white leading-none">$49</span>
-            <span className="text-white/70 font-medium">/Month</span>
+          
+          <h3 className="text-[1.3rem] font-bold text-white mb-1 mt-1">Pro</h3>
+          <p className="text-[#E9D5FF] text-[13px] mb-6">Best for professionals</p>
+          
+          <div className="mb-6 flex items-baseline gap-1">
+            <span className="text-[3.2rem] font-bold text-white leading-none">$29</span>
+            <span className="text-[#E9D5FF] font-medium text-sm">/Month</span>
           </div>
-          <ul className="flex flex-col gap-4 mb-10">
-            {features.slice(0, 4).map((f, i) => (
-              <li key={i} className="flex items-center gap-3 text-white font-medium text-[15px]">
-                <svg className="w-5 h-5 text-emerald-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+          
+          <ul className="flex flex-col gap-3.5 mb-10 flex-grow">
+            {[
+              "Access to all premium tools",
+              "Unlimited templates",
+              "Priority support",
+              "Unlimited projects",
+              "Cloud sync",
+              "Advanced analytics"
+            ].map((f, i) => (
+              <li key={i} className="flex items-center gap-3 text-white text-[14px]">
+                <svg className="w-[18px] h-[18px] text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 {f}
               </li>
             ))}
           </ul>
-          <button className="w-full py-4 mt-auto bg-white hover:bg-gray-50 text-[#8247FF] font-black text-[15px] rounded-full transition-colors shadow-lg shadow-black/10">
-            Get Professional
+          
+          <button className="w-full py-4 bg-white hover:bg-gray-50 text-[#8247FF] font-bold text-[14px] rounded-full transition-colors mt-auto">
+            Start Pro Trial
           </button>
         </div>
 
         {/* Enterprise Plan */}
-        <div className="bg-white border text-left border-gray-100 shadow-sm rounded-[2rem] p-10">
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-          <p className="text-gray-500 text-sm mb-8">For large-scale organizations.</p>
-          <div className="mb-10 flex items-baseline gap-1">
-            <span className="text-[3rem] font-extrabold text-gray-900 leading-none">$99</span>
-            <span className="text-gray-400 font-medium">/Month</span>
+        <div className="bg-white border border-gray-100 shadow-[0_4px_24px_rgba(0,0,0,0.02)] rounded-3xl p-10 flex flex-col text-left">
+          
+          <h3 className="text-[1.3rem] font-bold text-gray-900 mb-1">Enterprise</h3>
+          <p className="text-[#9CA3AF] text-[13px] mb-6">For teams and businesses</p>
+          
+          <div className="mb-6 flex items-baseline gap-1">
+            <span className="text-[3.2rem] font-bold text-gray-900 leading-none">$99</span>
+            <span className="text-[#9CA3AF] font-medium text-sm">/Month</span>
           </div>
-          <ul className="flex flex-col gap-4 mb-10">
-            {features.map((f, i) => (
-              <li key={i} className="flex items-center gap-3 text-gray-600 font-medium text-[15px]">
-                <svg className="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+          
+          <ul className="flex flex-col gap-3.5 mb-10 flex-grow">
+            {[
+              "Everything in Pro",
+              "Team collaboration",
+              "Custom integrations",
+              "Dedicated support",
+              "SLA guarantee",
+              "Custom branding"
+            ].map((f, i) => (
+              <li key={i} className="flex items-center gap-3 text-gray-500 text-[14px]">
+                <svg className="w-[18px] h-[18px] text-[#22C55E] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 {f}
               </li>
             ))}
           </ul>
-          <button className="w-full py-4 mt-auto bg-gray-50 text-gray-900 hover:bg-[#8247FF] hover:text-white font-bold rounded-full transition-all duration-300">
-            Get Enterprise
+          
+          <button className="w-full py-4 bg-[#8247FF] hover:bg-purple-700 text-white font-bold text-[14px] rounded-full transition-colors mt-auto">
+            Contact Sales
           </button>
         </div>
 
