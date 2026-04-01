@@ -14,7 +14,6 @@ function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
-  // Load products data from JSON
   useEffect(() => {
     fetch('products.json')
       .then(res => res.json())
@@ -22,28 +21,25 @@ function App() {
       .catch(error => console.error("Error fetching data:", error));
   }, []);
 
-  // Action: Add to cart
   const handleAddToCart = (product) => {
     const isExist = cart.find(item => item.id === product.id);
     if (isExist) {
-        toast.warning("This product is already in your cart!");
+      toast.warning("This product is already in your cart!");
     } else {
-        setCart([...cart, product]);
-        toast.success("Successfully added to cart!");
+      setCart([...cart, product]);
+      toast.success("Successfully added to cart!");
     }
   };
 
-  // Action: Remove from cart
   const handleRemoveFromCart = (id) => {
-      const remainingCart = cart.filter(item => item.id !== id);
-      setCart(remainingCart);
-      toast.info("Product removed from cart!");
+    const remainingCart = cart.filter(item => item.id !== id);
+    setCart(remainingCart);
+    toast.info("Product removed from cart!");
   };
 
-  // Action: Proceed to Checkout
   const handleCheckout = () => {
-      setCart([]); 
-      toast.success("Proceeding to checkout successfully! Your cart is cleared.");
+    setCart([]);
+    toast.success("Proceeding to checkout successfully! Your cart is cleared.");
   };
 
   return (
@@ -51,18 +47,14 @@ function App() {
       
       <ToastContainer position="top-right" autoClose={2500} />
 
-      {/* Navbar Section */}
       <Navbar cartCount={cart.length} />
 
-      {/* Hero / Banner Section */}
       <div className="w-full">
         <Banner />
       </div>
 
-      {/* Stats Section */}
       <Stats />
 
-      {/* Main Section (Products and Cart Toggle) */}
       <MainSection 
         products={products} 
         cart={cart}
@@ -71,13 +63,10 @@ function App() {
         handleCheckout={handleCheckout}
       />
 
-      {/* Steps Component */}
       <Steps />
 
-      {/* Pricing Component */}
       <Pricing />
 
-      {/* Footer Component */}
       <Footer />
 
     </div>

@@ -9,7 +9,6 @@ const MainSection = ({ products, cart, handleAddToCart, handleRemoveFromCart, ha
   return (
     <div className="py-16 bg-white">
       
-      {/* Header text */}
       <div className="text-center max-w-2xl mx-auto px-4 mb-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Premium Digital Tools</h2>
         <p className="text-gray-500 text-base">
@@ -17,7 +16,6 @@ const MainSection = ({ products, cart, handleAddToCart, handleRemoveFromCart, ha
         </p>
       </div>
 
-      {/* Toggle Buttons */}
       <div className="flex justify-center mb-16">
         <div className="flex items-center gap-2 p-1.5 border border-gray-100 rounded-full shadow-sm bg-white">
           <button 
@@ -43,7 +41,6 @@ const MainSection = ({ products, cart, handleAddToCart, handleRemoveFromCart, ha
         </div>
       </div>
 
-      {/* Content Area */}
       <div className="max-w-7xl mx-auto px-6">
         {activeTab === 'products' ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -69,13 +66,8 @@ const MainSection = ({ products, cart, handleAddToCart, handleRemoveFromCart, ha
               </div>
             ) : (
               <div className="bg-white rounded-xl p-10 border border-gray-200">
+                <h2 className="text-xl font-bold text-gray-900 mb-8 text-left">Your Cart</h2>
                 
-                {/* Cart Header */}
-                <h2 className="text-xl font-bold text-gray-900 mb-8 text-left">
-                  Your Cart
-                </h2>
-                
-                {/* Cart Items List */}
                 <div className="flex flex-col gap-4 mb-12">
                   {cart.map(item => (
                     <CartItem 
@@ -86,7 +78,6 @@ const MainSection = ({ products, cart, handleAddToCart, handleRemoveFromCart, ha
                   ))}
                 </div>
 
-                {/* Cart Summary & Checkout */}
                 <div className="w-full">
                   <div className="flex justify-between items-center mb-8 px-2">
                     <p className="text-sm text-gray-400 font-medium">Total:</p>
