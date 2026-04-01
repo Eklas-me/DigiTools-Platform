@@ -47,14 +47,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-white text-gray-800">
+    <div className="min-h-screen font-sans bg-white text-gray-800 pt-[72px]">
       
-      <ToastContainer position="top-center" autoClose={2500} />
+      <ToastContainer position="top-right" autoClose={2500} />
 
       {/* Navbar Section */}
-      <div className="w-full">
-        <Navbar cartCount={cart.length} />
-      </div>
+      <Navbar cartCount={cart.length} />
 
       {/* Hero / Banner Section */}
       <div className="w-full">
